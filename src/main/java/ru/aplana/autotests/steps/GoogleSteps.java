@@ -24,6 +24,7 @@ public class GoogleSteps extends AbstractStep{
         String workingDir = System.getProperty("user.dir");
         String baseUrl = "https://www.google.ru/";
         driver = new ChromeDriver();
+        driver.get(baseUrl);
     }
     @When("выполнен переход к странице авторизации")
     public void goToLoginGmailPage(){
