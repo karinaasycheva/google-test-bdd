@@ -21,7 +21,7 @@ public class GoogleSteps {
     @Given("открыта главная страница")
     public void openHomePage(){
         String workingDir = System.getProperty("user.dir");
-        System.setProperty("webdriver.firefox.marionette", workingDir + "\\drivers\\geckodriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
         String baseUrl = "https://www.google.ru/";
         ThucydidesWebDriverSupport.getDriver().get(baseUrl);
     }
